@@ -7,12 +7,8 @@ import { Carousel } from './componentes/appCarousel';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Navbar/>
-      </header>
-      <body>
-        <Carousel/>
-      </body>
+      <Navbar />
+      <Carousel />
     </div>
   );
 }
