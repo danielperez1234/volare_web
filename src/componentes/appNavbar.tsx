@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../style/appNavbar.css'
 export const _ItemNav = (text:string) => {
     return <div className='itemNav'>
@@ -7,7 +7,7 @@ export const _ItemNav = (text:string) => {
         
     </div>;
 }
-export const Navbar = () => {
+export const Navbar=()=>{
     let links = [
         {
             "ref": "Home",
@@ -26,10 +26,23 @@ export const Navbar = () => {
             "link": "source"
         }
     ]
-
+    const [yOffset, setYOffset] = useState(window.pageYOffset);
+    const [visible2, setVisible] = useState(true);
+  
+    useEffect(() => {
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    });
+  
+    function handleScroll() {
+      const currentYOffset = window.pageYOffset;
+      const visible2 = yOffset > currentYOffset;
+  
+      setYOffset(currentYOffset);
+      setVisible(visible2);
+    }
     return (
-        <div className='fullnavbar'>
-            <nav className="navbar">
+            <nav className={"navbar "+ (visible2?"":"navbar-hide")}>
                 <ul className='ul '>
                     <li className='imageUl'>
                         <img className='logo' src='resources/VolareLogo.png' alt=''/>
@@ -41,6 +54,6 @@ export const Navbar = () => {
                     }
                 </ul>
             </nav>
-        </div>
+       
     )
 }

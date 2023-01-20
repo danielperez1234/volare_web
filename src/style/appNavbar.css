@@ -13,9 +13,15 @@
 
   transition:  200ms ease-out 100ms;
 }
+.navbar-hide{
+  top: -80px !important;
+}
 .navbar{
+  top: 0px;
+  transition: top 1000ms;
   display: flex;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   background-color: black;
   padding: 0px;
 }
