@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Navbar } from './componentes/appNavbar';
+import { Carousel } from './componentes/appCarousel';
 
 function App() {
   return (
@@ -9,6 +10,9 @@ function App() {
       <header className="App-header">
         <Navbar/>
       </header>
+      <body>
+        <Carousel/>
+      </body>
     </div>
   );
 }
