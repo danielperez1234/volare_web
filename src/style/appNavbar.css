@@ -1,0 +1,69 @@
+:root{
+  --appBlue: rgba(202,215,237,1)
+}
+
+.itemNav{
+  height:80px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: transparent ;
+
+
+  transition:  200ms ease-out 100ms;
+}
+.navbar{
+  display: flex;
+  position: sticky;
+  background-color: black;
+  padding: 0px;
+}
+.navbar ul {
+  height: 80px;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 0px;
+  margin: 0px;
+  vertical-align: bottom;
+}
+
+.navbar ul li {
+  margin-left: 3%;
+  
+}
+.imageUl{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.navbar ul li img {
+  margin-left: 3%;
+  height: 60%;
+  width: auto;
+  align-self: center;
+  
+}
+.navbar ul li a{
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bolder;
+  color: white;
+
+  padding: 0px;
+}
+
+.logo{
+  width: 20%;
+  height: auto;
+}
+.navbar ul li{
+  width: 100%;
+  color: transparent;
+}
+
+.itemNav:hover{
+  background: rgba(120, 120, 120, 0.233);
+  color: var(--appBlue);
+}
