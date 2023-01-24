@@ -14,8 +14,8 @@ function App() {
       <Carousel slides={appSliderData}/>
       <Video/>
       <Footer />
-      <DropDownCard title='Lorem Ipsum' body='Integer rutrum congue ipsum a ullamcorper. Phasellus laoreet hendrerit posuere. Fusce eu ipsum tincidunt, ullamcorper quam eget, mattis leo. Sed blandit lorem vitae eleifend consequat. Morbi mollis neque id dapibus iaculis. Aliquam ultrices ultricies lectus vel pharetra. Proin sed enim et neque sagittis tempus eu in turpis.
-uwu'/>
+      <DropDownCard title="What's this about?" body='Volaré is the next leader in delivery of all sorts: food, beverages, packages, drugs(Medicina), books, toys, you tell.
+Anything under 5KG, our drones can fly it directly to your kitchen, roof, porch or street.'/>
     </div>
   );
 }
