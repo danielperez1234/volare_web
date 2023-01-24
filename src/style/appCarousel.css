@@ -45,59 +45,6 @@
     transition-duration: 1s;
     transform: scale(1.08);
   }
-/*
-.carousel-container{
-    width: 100%;
-    height: auto;
-    display: flex;
-    padding-top: 5rem;
-    z-index: inherit;
-}
-
-.carousel-centro {
-    width: 100%;
-    height: auto;
-    background-color: red;
-    z-index: -1;
-    order: 2;
-}
-
-.carousel-imagen{
-    width: 100%;
-    height: 44rem;
-    object-fit: cover;
-}
-
-.carousel-boton-siguiente{
-    order: 1;
-    z-index: 1;
-}
-
-.carousel-boton-anterior{
-    order: 3;
-    z-index: 1;
-}
-
-.boton-siguiente{
-    height: 100%;
-    position: absolute;
-    right: 0px;
-    background: none;
-    border: none;
-    width: 40px;
-}
-
-.boton-anterior{
-    height: 100%;
-    position: absolute;
-    left: 0px;
-    background: none;
-    border: none;
-    width: 40px;
-
-    font-weight: 900;
-}
-*/
 /*.slider {
     z-index: -1;
     position: relative;
