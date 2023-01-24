@@ -1,0 +1,28 @@
+.iconos {
+    position: inherit;
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem;
+    width: 100%;
+    height: auto;
+    padding-top: 2rem;
+    background: -webkit-linear-gradient(to bottom, #CAD7ED, #FFFFFF);
+    background: linear-gradient(to bottom, #CAD7ED, #FFFFFF);
+}
+
+.container{
+    background-color: #283D62;
+    border-radius: 7px;
+    height: 180px;
+    width: 160px;
+}
+
+p{
+    color: black;
+    font-weight: bold;
+}
+
+img{
+    object-fit: fill;
+}
