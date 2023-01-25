@@ -5,19 +5,19 @@ export const Iconos = () => {
         <div className="iconos" id="iconos">
             <div className="container">
                 <img src="resources/Green-SVG-1.svg" className="icono"/>
-                <p>ORDERS IN UNDER 5 MINUTES</p>
+                <p className="text">ORDERS IN UNDER 5 MINUTES</p>
             </div>
             <div className="container">
                 <img src="resources/Speed-SVG-1.svg" className="icono"/>
-                <p>{"CAPACITY FOR PACKAGES < 5 KG"}</p>
+                <p className="text">{"CAPACITY FOR PACKAGES < 5 KG"}</p>
             </div>
             <div className="container">
                 <img src="resources/Green-SVG-1.svg" className="icono"/>
-                <p>FRIENDS WITH THE ENVIROMENT</p>
+                <p className="text">FRIENDS WITH THE ENVIROMENT</p>
             </div>
             <div className="container">
                 <img src="resources/Speed-SVG-1.svg" className="icono"/>
-                <p>YOU ARE OUR PRIORITY</p>
+                <p className="text">YOU ARE OUR PRIORITY</p>
             </div>
         </div>
     )

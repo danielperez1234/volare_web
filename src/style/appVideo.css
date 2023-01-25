@@ -1,42 +1,91 @@
 .video {
-    overflow:visible;
-    width: 60%;
+    overflow: visible;
+    width: 70%;
     padding: 0px;
     margin: 0px;
     border: 0px;
-    
-    border-radius: 200px;
-    background-image: url("/public/resources/play.png");
+    border-radius: 20px;
     transition: 300ms;
+    cursor: pointer;
+}
+
+.player {
+    overflow: visible;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    border-radius: 20px;
+    
+    transition: 500ms;
     background-size: 30%;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
+    box-shadow: 15px 20px 20px -6px rgba(0, 0, 0, 0.473);
+    cursor: pointer;
 }
-.video-pause{
+
+.video-pause {
     background-color: rgba(40, 61, 98, 1);
     box-shadow: 15px 15px 40px -10px rgba(0, 92, 255, 0.46);
-   
+    border-radius: 200px;
+    transition: 300ms;
+    width: 50%;
+    background-image: url("/public/resources/play.png");
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    cursor: pointer;
 }
-.player-pause{
+
+.player-pause {
     opacity: .35 !important;
+    border-radius: 200px;
+    transition: 300ms;
+    width: 100%;
+    cursor: pointer;
 }
+
 .video video {
     transition: 300ms;
     padding: 0px;
     margin: 0px;
     width: 100%;
     opacity: 1;
-    border-radius: 200px;
-    object-fit:cover;
-    
-    
+    border-radius: 20px;
+    object-fit: cover;
 }
 
-.video-margin{
+.video-margin {
     height: 100vh;
-    width:  100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 600ms;
+}
+
+.video-focus{
+    height: 130vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shadow{
+    transition: 1200ms;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background-color: black;
+}
+
+.background{
+    filter: blur(3px);
+    opacity: .35;
+    object-fit: cover;
+    height: 130vh;
+    width: 100%;
 }
