@@ -35,7 +35,7 @@ const TitleElemnt = ({ title, imgSrc, open }: { title: string, imgSrc: string, o
         <h1>{title}</h1>
       </div>
       <div className={"img-container " + (open ? "img-container-open" : "")}>
-        <img src={imgSrc} alt="" />
+        <img className="imageCard" src={imgSrc} alt="" />
       </div>
     </div>
   )

@@ -2,7 +2,7 @@ import React, {  useRef, useState } from 'react';
 import "../style/appVideo.css";
 
 export const Video = () => {
-    const [isPlay, setPlay] = useState(false);
+    const [isPlay, setPlay] = useState(true);
     const videoRef = useRef<HTMLVideoElement>(null);
     const handleClick = (e:React.MouseEvent<HTMLVideoElement>)=>{
         setPlay(!isPlay);
