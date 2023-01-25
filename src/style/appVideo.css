@@ -1,19 +1,33 @@
 .video {
-    overflow: hidden;
+    overflow:visible;
     width: 60%;
-    background-color: blue  ;
-    border-radius: 200px;
     padding: 0px;
     margin: 0px;
     border: 0px;
+    
+    border-radius: 200px;
+    background-image: url("/public/resources/play.png");
+    transition: 300ms;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
 }
-
+.video-pause{
+    background-color: rgba(40, 61, 98, 1);
+    box-shadow: 15px 15px 40px -10px rgba(0, 92, 255, 0.46);
+   
+}
+.player-pause{
+    opacity: .35 !important;
+}
 .video video {
+    transition: 300ms;
     padding: 0px;
     margin: 0px;
     width: 100%;
-    background-color: red;
     opacity: 1;
+    border-radius: 200px;
     object-fit:cover;
     
     
