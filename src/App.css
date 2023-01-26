@@ -1,3 +1,4 @@
 .App{
   display: flexbox;
+  overflow-y: hidden;
 }

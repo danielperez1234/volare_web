@@ -1,6 +1,7 @@
 .iconos {
     position: inherit;
     display: flex;
+    transition: 1s;
     align-content: space-between;
     align-items: center;
     margin-bottom: 10rem;
@@ -10,19 +11,33 @@
     background: -webkit-linear-gradient(to bottom, #CAD7ED, #FFFFFF);
     background: linear-gradient(to bottom, #CAD7ED, #FFFFFF);
 }
-
-.container{
+.iconos-sm{
+    justify-content: space-between;
+    min-height: 1000px!important;
+    flex-direction: column;
+}
+.Iconos-container{
     background-color: #283D62;
     border-radius: 7px;
     height: 180px;
-    width: 160px;
+    width: 180px;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    
 }
 
 .text{
-    color: black;
+
+    text-align: center;
+    color: white;
     font-weight: bold;
 }
 
 .icono{
+    align-self: center;
     object-fit: fill;
+    height: 60%;
 }

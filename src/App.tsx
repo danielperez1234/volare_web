@@ -10,6 +10,7 @@ import { Iconos } from './componentes/appIconos';
 
 function App() {
   return (
+    
     <div className="App">
       <Navbar />
       <Carousel slides={appSliderData}/>
