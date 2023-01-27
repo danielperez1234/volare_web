@@ -1,11 +1,11 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
-import "../style/footerStyle.css";
+import "../style/appFooter.css";
 
 export const Footer = () => {
   return (
     <footer>
-      <div className="container">
+      <div className="appFooter-container">
         <div className="row">
           <div className="col-md-4">
             <h3>Volare</h3>
