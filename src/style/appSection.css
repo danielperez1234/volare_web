@@ -1,0 +1,27 @@
+.section{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.BlackBar{
+    background-color: black;
+    width: 100%;
+    border-radius: 20px 0px 0px 20px;
+    margin-left: 10%;
+    padding: 2rem;
+    box-shadow: 20px 9px 8px 6px rgba(0, 0, 0, 0.916);
+}
+
+.Titulo{
+    color: white;
+}
+
+.imagenes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagen{
+    height: 100px;
+    width: auto;
+}
