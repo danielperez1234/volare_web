@@ -1,11 +1,11 @@
-@media(max-width:900px) {
+@media(max-width:899px) {
     .iconos {
         display: flex;
         flex-wrap: wrap;
         height: auto;
         width: 100%;
         align-content: center;
-        padding: 4rem;
+        justify-content: center;
         background: -webkit-linear-gradient(to bottom, #CAD7ED, #FFFFFF);
         background: linear-gradient(to bottom, #CAD7ED, #FFFFFF);
     }

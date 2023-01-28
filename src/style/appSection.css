@@ -1,27 +1,97 @@
-.section{
+@media(max-width:700px) {
+    .BlackBar {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+    }
+
+    .Titulo {
+        padding-left: 2rem;
+        color: white;
+        font-size: 300%;
+    }
+    
+    .Texto {
+        padding-left: 2rem;
+        font-size: larger;
+        font-size: 200%;
+    }
+
+    .Imagenes {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        align-content: center;
+        margin-top: 2rem;
+    }
+
+    .imagen {
+        object-fit: cover;
+        height: 180px;
+        width: 300px;
+    }
+
+    .trama {
+        width: 100%;
+    }
+
+    .imagenTrama {
+        object-fit: fill;
+        display: flexbox;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media(min-width:700px) {
+    .BlackBar {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: black;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .Titulo {
+        padding-left: 2rem;
+        color: white;
+        font-size: 300%;
+    }
+    
+    .Texto {
+        padding-left: 2rem;
+        font-size: larger;
+        font-size: 200%;
+    }
+
+    .imagenes {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .imagen {
+        height: 100px;
+        width: auto;
+    }
+
+    .trama {
+        height: 50%;
+        width: 100%;
+    }
+
+    .imagenTrama {
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.section {
     display: flex;
     margin-bottom: 2rem;
 }
 
-.BlackBar{
-    background-color: black;
-    width: 100%;
-    border-radius: 20px 0px 0px 20px;
-    margin-left: 10%;
-    padding: 2rem;
-    box-shadow: 20px 9px 8px 6px rgba(0, 0, 0, 0.916);
-}
-
-.Titulo{
-    color: white;
-}
-
-.imagenes{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.imagen{
-    height: 100px;
-    width: auto;
-}
