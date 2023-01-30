@@ -1,3 +1,7 @@
+:root{
+  --appBlue: rgba(202,215,237,1)
+}
+
 .App{
   display: flexbox;
   overflow-y: hidden;

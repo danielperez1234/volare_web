@@ -1,3 +1,8 @@
+:root{
+  --appBlue: rgba(202,215,237,1);
+  --blackBlue: rgba(40,61,98,1);
+}
+
 .card{
 width: 80vw;
 height: 240px;
@@ -34,16 +39,29 @@ border-radius: 60px;
 .icOpen{
   rotate: 180deg;
 }
-.row-title{
+.card-row-title{
   justify-content: space-evenly;
   flex-direction: row;
   width: 80vw ;
   align-items: center;
   display: flex;
+  transition: 600ms;
 }
-.title{
+.card-title{
   position: relative;
   background-color: transparent;
+}
+.card-title-sm{
+  position: absolute !important;
+  padding-left: 25px;
+  padding-right: 25px;
+  transition: 300ms;
+  background-color: rgba(0, 0, 0,.87) !important;
+  max-width: 40vw;
+  color: #FFFFFF;
+  font-size: .5rem;
+  text-align: center;
+  z-index: 9;
 }
 .title-open{
   position: absolute !important;
@@ -51,6 +69,8 @@ border-radius: 60px;
   padding-right: 25px;
   background-color: rgba(0, 0, 0,.87) !important;
   max-width: 40vw;
+  font-size: 1rem;
+  text-align: center;
   color: #FFFFFF;
   z-index: 9;
 }
@@ -64,26 +84,41 @@ border-radius: 60px;
   transition: 600ms;
 
 
+}.card-img-container-sm{
+  z-index: 0;
+  overflow: hidden;
+  border-radius: 45px;
+  width: 80%;
+  min-width: 180px;
+  transition: 600ms;
+  height: 30vw;
+  background-color: rgb(40, 61, 98);
 }
-.img-container{
+.card-img-container{
   border-radius: 25px;
   width: 20%;
+  min-width: 180px;
   transition: 600ms;
   height: 180px;
   background-color: rgb(40, 61, 98);
 }
-.img-container-open{
+.card-img-container-open{
   width:100% ;
   max-height: 60vh;
   height: 600px;
   border-radius: 60px;
   box-shadow: 0px 35px 25px -15px rgba(0, 0, 0, 0.7);
 }
-.img-container-open .imageCard{
+.card-img-container-open .imageCard{
   border-radius: 60px;
   opacity: .5;
 
 }
-.body{
+.card-body{
   margin: 80px;
+}
+.card-body-text{
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--blackBlue);
 }
