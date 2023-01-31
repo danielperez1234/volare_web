@@ -1,23 +1,22 @@
-:root{
-  --appBlue: rgba(202,215,237,1)
+:root {
+  --appBlue: rgba(202, 215, 237, 1);
 }
 
-.itemNav{
-  height:80px;
+.itemNav {
+  height: 80px;
   width: 100%;
   align-items: center;
   justify-content: center;
   display: flex;
-  background-color: transparent ;
-
-
-  transition:  200ms ease-out 100ms;
+  background-color: transparent;
+  transition: 200ms ease-out 100ms;
 }
-.navbar-hide{
+.navbar-hide {
   top: -80px !important;
 }
-.navbar{
-  z-index: 9;
+.navbar {
+  align-items: center;
+  z-index: 11;
   top: 0px;
   transition: top 1000ms;
   display: flex;
@@ -38,9 +37,8 @@
 
 .navbar ul li {
   margin-left: 3%;
-  
 }
-.imageUl{
+.imageUl {
   align-items: center;
   justify-content: center;
   display: flex;
@@ -50,9 +48,8 @@
   height: 60%;
   width: auto;
   align-self: center;
-  
 }
-.navbar ul li a{
+.navbar ul li a {
   text-decoration: none;
   font-size: larger;
   font-weight: bolder;
@@ -61,16 +58,102 @@
   padding: 0px;
 }
 
-.logo{
+.logo {
   width: 20%;
   height: auto;
 }
-.navbar ul li{
+.navbar ul li {
   width: 100%;
   color: transparent;
 }
 
-.itemNav:hover{
+.itemNav:hover {
   background: rgba(120, 120, 120, 0.233);
   color: var(--appBlue);
+}
+
+.burger {
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+  margin: 0px 20px;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: white;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+  .itemNav {
+    display: none;
+    top: 80px;
+    position: absolute;
+    right: 0;
+    flex-direction: column;
+    background: orange;
+    width: 300px;
+    transition: 0.8s ease all;
+    height: 500px;
+  }
+  .itemNav:hover {
+    background: rgba(120, 120, 120, 0.233);
+    color: var(--appBlue);
+  }
+
+  /* .itemNav {
+    display: none;
+  } */
 }

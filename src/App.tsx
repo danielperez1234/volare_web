@@ -8,6 +8,7 @@ import { appSliderData } from './componentes/appSliderData';
 import { Video } from './componentes/appVideo';
 import { Iconos } from './componentes/appIconos';
 import { Section } from './componentes/appSection';
+import { Nav } from './componentes/nav';
 
 function App() {
   return (
