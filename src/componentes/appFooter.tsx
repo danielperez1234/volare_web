@@ -10,19 +10,19 @@ export const Footer = () => {
           <div className="col-md-4">
             <h3>Volare</h3>
             <p>
-              Volare is a company that offers a service of transportation of
-              people and goods, with the best prices and the best service.
+              Volaré es una compañia que ofrece servicios de transporte de todo tipo
+              de bienes y articulos de necesidad, con los mejores precios y el mejor servicio.
             </p>
           </div>
           <div className="col-md-4">
-            <h3>Contact us</h3>
+            <h3>Contactanos</h3>
             <ul>
-              <li>Phone: +1 602 596 2459</li>
+              <li>Telefono: +1 602 596 2459</li>
               <li>Email: Volare@tacos.com</li>
             </ul>
           </div>
           <div className="col-md-4">
-            <h3>Follow us</h3>
+            <h3>Siguenos en redes</h3>
             <ul className="social-icons">
                 <li><a href="https://www.facebook.com/"><FaFacebook /></a></li>
                 <li><a href="https://twitter.com/"><FaTwitter /></a></li>

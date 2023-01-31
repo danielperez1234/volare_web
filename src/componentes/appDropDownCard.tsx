@@ -12,7 +12,7 @@ export const DropDownCard = ({ title, body }: { title: string, body: string }) =
   return (
     <div className='locator'>
       <div className={"card " + (open ? "cardOpen" : "")} onClick={handleKeyboardEvent}>
-        <TitleElemnt title="What's this about?" imgSrc="./resources/Dron1.jpg" open={open} />
+        <TitleElemnt title={title} imgSrc="./resources/Dron1.jpg" open={open} />
         <BodyCard open={open} body={body} />
         <div className={"ic " + (open ? "icOpen" : "")}>{<FiChevronDown />}</div>
       </div>

@@ -12,15 +12,15 @@ export const Navbar = () => {
       link: "https://icomoon.io/app/#/select/image",
     },
     {
-      ref: "US",
+      ref: "Nosotros",
       link: "source",
     },
     {
-      ref: "How it Works",
+      ref: "Como lo hacemos",
       link: "source",
     },
     {
-      ref: "Contact",
+      ref: "Contacto",
       link: "source",
     },
   ];
