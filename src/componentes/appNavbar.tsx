@@ -5,7 +5,7 @@ export const _ItemNav = (text: string) => {
 };
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  
+
   let links = [
     {
       ref: "Home",
@@ -49,13 +49,15 @@ export const Navbar = () => {
           return (
             <li className="li" key={indice}>
               <a className="links" href={links.link}>
+                <div className={`nav_items ${isOpen && "open"}`}>
                 {_ItemNav(links.ref)}
+                </div>
               </a>
             </li>
           );
         })}
       </ul>
-      <div className={`nav_items ${isOpen && "open"}`}>
+      <div >
         <label htmlFor="burger" className="burger">
           <input
             type="checkbox"
