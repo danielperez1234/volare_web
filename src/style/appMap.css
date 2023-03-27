@@ -1,0 +1,12 @@
+.map{
+  height: 50vh;
+  width: 80vw;
+  align-self: center;
+  border-radius: 10vw;
+  overflow: hidden;
+}
+.mapContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
